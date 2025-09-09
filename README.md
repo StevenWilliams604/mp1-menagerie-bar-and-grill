@@ -5,7 +5,7 @@ A website for a fictional dining establishment within the Elite Dangerous univer
 
 # Menagerie Bar & Grill
 
-Welcome to the **Menagerie Bar & Grill** — your hottest new dining destination.
+Welcome to the **Menagerie Bar & Grill** - your hottest new dining destination.
 Our restaurant aims to serve a wide range of tasty, crowd-pleasing meals made with quality ingredients and diverse techniques, all in a casual atmosphere with handcrafted cocktails and a broad choice of beers, wines and spirits. Our rotating schedule of live events will create the perfect setting for any occasion.
 
 This website was designed to give guests a taste of what we offer, from browsing our menu to reserving a table for a special night out.
