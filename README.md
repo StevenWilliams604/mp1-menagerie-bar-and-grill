@@ -47,15 +47,15 @@ This website was designed to give guests a taste of what we offer, from browsing
 
 ## Technologies Behind the Website
 
-* **HTML5 & CSS3** – To create a modern, responsive design.
-* **Bootstrap 5** – For layout, styling, and mobile-first responsiveness.
-* **GitHub Pages** – Hosting the live site.
+* **HTML5 & CSS3** - To create a modern, responsive design.
+* **Bootstrap 5** - For layout, styling, and mobile-first responsiveness.
+* **GitHub Pages** - Hosting the live site.
 
 ---
 
 ## Visit the Site
 
-👉 [Live Website](https://stevenwilliams604.github.io/menagerie-bar-grill/)
+[Live Website](https://stevenwilliams604.github.io/menagerie-bar-grill/)
 
 ---
 
