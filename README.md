@@ -53,6 +53,20 @@ This website was designed to give guests a taste of what we offer, from browsing
 
 ---
 
+## Wireframes
+
+### Initial draft for the index.html
+
+![Draft wireframe of the Menagerie Bar & Grill homepage](assets/images/wireframe-draft.png)
+
+### Final draft wireframe for desktop
+(tbd)
+
+### Final draft wirefram for mobile
+(tbd)
+
+---
+
 ## Visit the Site
 
 [Live Website](https://stevenwilliams604.github.io/menagerie-bar-grill/)
