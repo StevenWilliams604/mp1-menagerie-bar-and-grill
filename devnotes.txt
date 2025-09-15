@@ -1,0 +1,12 @@
+Fonts
+
+Hero Heading: Gill Sans Ultra Bold, Fuchsia
+Hero Subheading: Harlow Solid Italic, Yellow
+
+Headings: Bauhaus 93(?)
+Detail text: Proxima Nova
+
+Events:
+Mashup Mondays
+Wayforward Wednesdays
+Flashback Fridays
