@@ -1,10 +1,15 @@
 Fonts
 
-Hero Heading: Gill Sans Ultra Bold, Fuchsia
-Hero Subheading: Harlow Solid Italic, Yellow
+Navbar Name Heading, "THE MENAGERIE": Gill Sans Ultra Bold, bold typeface, size 28, fuchsia colour, justified left. I wanted something nice and chunky for this bit. 
+Navbar Subheading, "Bar & Grill": Harlow Solid Italic, size 28, yellow colour, justified right while still sitting under "THE MENAGERIE" text. Intention is for it look like a calligraphic neon light. 
 
-Headings: Bauhaus 93(?)
-Detail text: Proxima Nova
+Navbar links to other pages: Bauhaus 93, size 24, bold, indigo colour. Current/hover navbar links: Bauhaus 93, size 24, bold, fuchsia colour. 
+Emphasis on readability for the following: 
+Main content headings: Bauhaus 93, size 24, light grey colour. 
+	[free alternative: "Snappy Service", size 26, bold, light grey colour downloaded from https://www.1001fonts.com/snappyservice-font.html]
+Main content detail text: Proxima Nova, size 12, light grey colour.
+	[Free alternative: Use Google Font Figtree]
+	[lorem ipsum courtesy of https://baconipsum.com/]
 
 Events:
 Mashup Mondays
