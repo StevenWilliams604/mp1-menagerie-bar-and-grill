@@ -60,10 +60,10 @@ This website was designed to give guests a taste of what we offer, from browsing
 ![Draft wireframe of the Menagerie Bar & Grill homepage](assets/images/wireframe-draft.png)
 
 ### Final draft wireframe for desktop
-(tbd)
+![Final draft wireframe for the desktop version](assets/images/wireframe-desktop-final-draft.png)
 
 ### Final draft wirefram for mobile
-(tbd)
+![Final draft wireframe for the mobile version](assets/images/wireframe-mobile-final-draft.png)
 
 ---
 
