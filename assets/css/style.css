@@ -1,0 +1,22 @@
+/* Google Fonts import */
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&display=swap');
+</style>
+
+body {
+    font-family: "Figtree", sans-serif;
+}
+
+/* Custom hosted fonts */
+@font-face {
+  font-family: "SnappyServiceNF";
+  src: url("assets/fonts/SnappyServiceNF.ttf") format("truetype"),
+       url("assets/fonts/SnappyServiceNF.otf") format("opentype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* Custom font application */
+h2 {
+  font-family: "SnappyServiceNF", sans-serif;
+}
