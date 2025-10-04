@@ -1,5 +1,5 @@
 /* Google Fonts import */
-@import url('https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&display=swap");
 
 /* Custom self-hosted font */
 @font-face {
@@ -11,24 +11,88 @@
 
 /* CSS Variables */
 :root {
-    --primary-font: "Figtree", sans-serif;
-    --secondary-font: "SnappyServiceNF", sans-serif;
-    --text-color: lightgray;
-    --primary-bg-color: #2F2F2F;
-    --secondary-bg-color: black;
-    --highlight-color: indigo; 
-    --highlight-color-light: fuchsia;
+  --primary-font: "Figtree", sans-serif;
+  --secondary-font: "SnappyServiceNF", sans-serif;
+  --text-color: lightgray;
+  --primary-bg-color: #2f2f2f;
+  --secondary-bg-color: black;
+  --highlight-color: indigo;
+  --highlight-color-light: fuchsia;
 }
 
 /* Global styles */
 body {
-    font-family: var(--primary-font);
-    color: var(--text-color);
-    background-color: var(--primary-bg-color);
+  font-family: var(--primary-font);
+  color: var(--text-color);
+  background-color: var(--primary-bg-color);
 }
 
-/* Headings */
-h2 {
-  font-family: var(--secondary-font);
+/* Buttons */
+.custom-button-filled {
+  border: 2px solid #fc0fc0;
+  background-color: #fc0fc0;
+  color: white !important;
+  text-decoration: none;
+}
+
+.custom-button-filled:hover {
+  border: 2px solid indigo;
+  background-color: #fc0fc0;
+  color: var(--text-color);
+  text-decoration: none;
+}
+
+.custom-button-outline {
+  border: 3px solid indigo;
+  padding: 7px 25px;
+  color: var(--text-color);
+  text-decoration: none;
+}
+
+.custom-button-outline:hover {
+  background-color: var(--highlight-color);
+  color: white;
+}
+
+/* Navigation Bar */
+/* Navbar links - default fuchsia */
+.navbar-nav a {
+  color: var(--highlight-color-light);
+  text-decoration: none;
   font-weight: bold;
+  padding: 0.5em 1em;
+  display: inline-block;
+}
+
+.navbar-nav .nav-link {
+  font-size: 2rem; /* default ~1rem, so this makes it bigger */
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+/* Bootstrap overriding styles */
+nav, .navbar {
+  background-color: var(--secondary-bg-color);
+  font-family: var(--secondary-font);
+}
+
+/* Default nav link color: fuchsia */
+nav .nav-link,
+.navbar .nav-link {
+  color: var(--highlight-color-light); /* fuchsia */
+  text-decoration: none;
+}
+
+/* Hover: indigo */
+nav .nav-link:hover,
+.navbar .nav-link:hover {
+  color: var(--highlight-color); /* indigo */
+}
+
+/* Active/current page: indigo */
+nav .nav-link.active,
+.navbar .nav-link.active {
+  color: var(--highlight-color); /* indigo */
+  font-weight: bold; /* optional: make it stand out */
+  text-decoration: underline; /* optional */
 }
