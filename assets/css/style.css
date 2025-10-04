@@ -16,6 +16,8 @@
     --text-color: lightgray;
     --primary-bg-color: #2F2F2F;
     --secondary-bg-color: black;
+    --highlight-color: indigo; 
+    --highlight-color-light: fuchsia;
 }
 
 /* Global styles */
