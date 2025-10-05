@@ -48,9 +48,67 @@
     <link rel="stylesheet" href="assets/css/style.css" />
   </head>
 
-  <body>
-    <header></header>
-    <nav></nav>
+  <body class="d-flex flex-column min-vh-100">
+    <!-- Navigation -->
+    <nav id="navbar" class="navbar navbar-expand-lg fixed-top">
+      <div class="container">
+        <a class="navbar-brand" href="index.html">
+          <img
+            src="assets/images/cocktail-logo-transparent-evensized.png"
+            alt="Menagerie Bar & Grill Cocktail Logo"
+            class="logo d-none d-md-block"
+          />
+        </a>
+        <!-- Responsive title logo -->
+        <picture>
+          <!-- Small logo for <768px -->
+          <source
+            srcset="assets/images/menagerie-logo-mobile.png"
+            media="(max-width: 767px)"
+          />
+          <!-- Default logo for >=768px -->
+          <img
+            src="assets/images/menagerie-logo.png"
+            alt="Menagerie Bar & Grill Title"
+            class="navbar-title"
+          />
+        </picture>
+
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <!-- Nav links centered -->
+          <ul class="navbar-nav mx-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="menu.html">Menu</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="events.html">Events</a>
+            </li>
+          </ul>
+
+          <!-- Book a Table button pushed to the right -->
+          <a href="booking.html" class="btn custom-button-filled ms-lg-3 active"
+            >Book a Table</a
+          >
+        </div>
+      </div>
+    </nav>
+
+    <!-- Bootstrap script -->
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
