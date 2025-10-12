@@ -37,6 +37,27 @@ footer {
   background-color: var(--secondary-bg-color);
 }
 
+/* Footer social icons */
+.social-icon {
+  width: 48px;
+  height: 48px;
+  margin: 0 10px;
+  vertical-align: middle; /* ensure all icons align neatly on the same baseline */
+  transition: transform 0.2s ease, opacity 0.2s ease;
+}
+
+.social-icon:hover {
+  transform: scale(1.1);
+  opacity: 0.8;
+}
+
+/* Special rule for wider rectangular logos */
+.social-icon-wide {
+  width: auto; /* keep natural width */
+  height: 48px; /* match height of other icons */
+  vertical-align: middle;
+}
+
 /* Buttons */
 .custom-button-filled {
   border: 2px solid #fc0fc0;
