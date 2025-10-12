@@ -136,6 +136,12 @@ nav .nav-link.active,
   text-decoration: underline;
 }
 
+/* Fix for hero section being hidden under fixed navbar */
+#hero {
+  padding-top: 70px; /* or margin-top: 70px; */
+}
+
+
 /* Fix button + nav link sizing between 992px and 1199px */
 @media (min-width: 992px) and (max-width: 1199px) {
   /* Book a Table button */
@@ -181,5 +187,29 @@ nav .nav-link.active,
   #navbarNav .navbar-nav {
     margin-left: auto;          /* pushes items right */
     align-items: flex-end;      /* keeps list items right-aligned */
+  }
+}
+
+/* Hero Section of index.html */
+.hero-text-box {
+  background-color: rgba(0, 0, 0, 0.6);
+  border: 2px solid var(--highlight-color);
+  color: var(--text-color);
+}
+
+.hero-heading {
+  font-family: var(--secondary-font);
+  color: var(--highlight-color-light);
+  font-size: 2rem;
+}
+
+@media (max-width: 991px) {
+  .hero-heading {
+    text-align: center;
+    font-size: 1.75rem;
+  }
+
+  .hero-text-box {
+    text-align: center;
   }
 }
