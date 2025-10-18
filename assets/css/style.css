@@ -187,12 +187,13 @@ nav .nav-link.active,
   font-weight: 700;
 }
 
-/* Magenta bar below heading */
+/* Shocking pink bar below heading */
 .info-bar {
   width: 60%;
   height: 5px;
-  background-color: #fc0fc0;
+  background-color: #f62681;
   border-radius: 3px;
+  border-color: #f62681;
 }
 
 /* Media Queries for responsiveness */
