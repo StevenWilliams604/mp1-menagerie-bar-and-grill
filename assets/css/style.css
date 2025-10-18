@@ -196,6 +196,76 @@ nav .nav-link.active,
   border-color: #f62681;
 }
 
+
+/* Carousel Styling */
+
+#gallery {
+  background-color: var(--primary-bg-color);
+  padding: 3rem 0;
+  text-align: center;
+}
+
+#gallery h2 {
+  font-family: var(--secondary-font);
+  color: var(--highlight-color-light);
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin-bottom: 1.5rem;
+}
+
+/* Carousel container */
+.carousel {
+  max-width: 900px;
+  margin: 0 auto;
+  border: 4px solid var(--highlight-color-light);
+  border-radius: 4px;
+  box-shadow: 0 0 25px rgba(255, 0, 255, 0.25);
+  overflow: hidden;
+}
+
+/* Images inside carousel */
+.carousel-item img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  border-radius: 4px;
+  transition: transform 0.8s ease;
+}
+
+.carousel-item.active img {
+  transform: scale(1.02);
+}
+
+/* Carousel indicators (the little dots) */
+.carousel-indicators [data-bs-target] {
+  background-color: var(--highlight-color-light);
+  opacity: 0.6;
+  transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.carousel-indicators .active {
+  opacity: 1;
+  transform: scale(1.2);
+}
+
+/* Previous / next control buttons */
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  filter: invert(78%) sepia(96%) saturate(3600%) hue-rotate(280deg)
+    brightness(95%) contrast(105%);
+  width: 2rem;
+  height: 2rem;
+}
+
+.carousel-control-prev:hover .carousel-control-prev-icon,
+.carousel-control-next:hover .carousel-control-next-icon {
+  filter: invert(100%) sepia(0%) saturate(1000%) hue-rotate(0deg)
+    brightness(150%) contrast(120%);
+  transform: scale(1.15);
+  transition: all 0.3s ease;
+}
+
+
 /* Media Queries for responsiveness */
 
 /* Fix button + nav link sizing between 992px and 1199px */
@@ -256,3 +326,16 @@ nav .nav-link.active,
     text-align: center;
   }
 }
+
+/* Responsive carousel padding */
+@media (max-width: 990px) {
+  .carousel {
+    margin-left: 1rem;
+    margin-right: 1rem;
+  }
+
+  #gallery {
+    padding: 2rem 1rem; /* add horizontal padding to the section itself */
+  }
+}
+
