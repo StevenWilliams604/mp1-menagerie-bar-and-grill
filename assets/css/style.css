@@ -28,7 +28,9 @@ body {
   padding-top: 57.15px; /* pushes the header down under fixed navbar */
 }
 
-h1, h2, h3 {
+h1,
+h2,
+h3 {
   font-family: var(--secondary-font);
 }
 
@@ -110,7 +112,8 @@ footer {
 }
 
 /* Bootstrap overriding styles */
-nav, .navbar {
+nav,
+.navbar {
   background-color: var(--secondary-bg-color);
   font-family: var(--secondary-font);
 }
@@ -139,55 +142,6 @@ nav .nav-link.active,
 /* Fix for hero section being hidden under fixed navbar */
 #hero {
   padding-top: 70px; /* or margin-top: 70px; */
-}
-
-
-/* Fix button + nav link sizing between 992px and 1199px */
-@media (min-width: 992px) and (max-width: 1199px) {
-  /* Book a Table button */
-  .custom-button-filled,
-  .custom-button-outline {
-    font-size: 0.9rem; /* shrink slightly */
-    padding: 5px 18px; /* adjust padding so height stays balanced */
-  }
-
-  /* Navbar links */
-  .navbar-nav .nav-link {
-    font-size: 1.45rem; /* slightly smaller text */
-    padding-left: 10px;
-    padding-right: 10px;
-  }
-}
-
-/* Collapsed navbar (mobile/tablet) adjustments */
-@media (max-width: 991px) {
-  /* Nav links */
-  .navbar-nav .nav-link {
-    font-size: 1.45rem;  /* Adjust this up/down as you prefer */
-    padding: 10px 0;  /* Adds vertical space for touch usability */
-    text-align: right; /* Optional, makes text align to right */
-  }
-
-  /* Buttons inside collapsed menu */
-  .navbar-nav .custom-button-filled,
-  .navbar-nav .custom-button-outline {
-    font-size: 0.50rem; 
-    padding: 8px 32px;
-    display: block;      /* Full width look */
-    text-align: center;  /* Center button text */
-    margin: 32px 0;       /* Spacing between button and links */
-  }
-}
-
-/* Align drop-down menu to right */
-@media (max-width: 991px) {
-  #navbarNav {
-    text-align: right;          /* text to the right */
-  }
-  #navbarNav .navbar-nav {
-    margin-left: auto;          /* pushes items right */
-    align-items: flex-end;      /* keeps list items right-aligned */
-  }
 }
 
 /* Hero Section of index.html */
@@ -241,12 +195,56 @@ nav .nav-link.active,
   border-radius: 3px;
 }
 
-/* Responsive layout handled by Bootstrap:
-   - side by side on md+ (>=768px)
-   - stacked on smaller screens 
-*/
+/* Media Queries for responsiveness */
 
+/* Fix button + nav link sizing between 992px and 1199px */
+@media (min-width: 992px) and (max-width: 1199px) {
+  /* Book a Table button */
+  .custom-button-filled,
+  .custom-button-outline {
+    font-size: 0.9rem; /* shrink slightly */
+    padding: 5px 18px; /* adjust padding so height stays balanced */
+  }
+  /* Navbar links */
+  .navbar-nav .nav-link {
+    font-size: 1.45rem; /* slightly smaller text */
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+}
 
+/* Align drop-down menu to right */
+@media (max-width: 991px) {
+  #navbarNav {
+    text-align: right; /* text to the right */
+  }
+  #navbarNav .navbar-nav {
+    margin-left: auto; /* pushes items right */
+    align-items: flex-end; /* keeps list items right-aligned */
+  }
+}
+
+/* Collapsed navbar (mobile/tablet) adjustments */
+@media (max-width: 991px) {
+  /* Nav links */
+  .navbar-nav .nav-link {
+    font-size: 1.45rem; /* Adjust this up/down as you prefer */
+    padding: 10px 0; /* Adds vertical space for touch usability */
+    text-align: right; /* Optional, makes text align to right */
+  }
+
+  /* Buttons inside collapsed menu */
+  .navbar-nav .custom-button-filled,
+  .navbar-nav .custom-button-outline {
+    font-size: 0.5rem;
+    padding: 8px 32px;
+    display: block; /* Full width look */
+    text-align: center; /* Center button text */
+    margin: 32px 0; /* Spacing between button and links */
+  }
+}
+
+/* Adjust hero section for smaller screens */
 @media (max-width: 991px) {
   .hero-heading {
     text-align: center;
