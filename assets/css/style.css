@@ -237,7 +237,7 @@ nav .nav-link.active,
   transform: scale(1.02);
 }
 
-/* Carousel indicators (the little dots) */
+/* Carousel indicators (the little pips) */
 .carousel-indicators [data-bs-target] {
   background-color: var(--highlight-color-light);
   opacity: 0.6;
@@ -258,22 +258,33 @@ nav .nav-link.active,
   height: 2rem;
 }
 
-/* Menu Section Styling */
-.menu-category-title {
-  color: var(--highlight-color);
-  border-bottom: 3px solid var(--highlight-color-light);
-  margin-bottom: 1rem;
-  padding-bottom: 0.25rem;
+.carousel-control-prev:hover .carousel-control-prev-icon,
+.carousel-control-next:hover .carousel-control-next-icon {
+  filter: invert(100%) sepia(0%) saturate(1000%) hue-rotate(0deg)
+    brightness(150%) contrast(120%);
+  transform: scale(1.15);
+  transition: all 0.3s ease;
 }
 
-.menu-item {
-  margin-bottom: 1.5rem;
+
+/* Menu Section Styling */
+
+.menu-section {
+  text-align: center;
+}
+
+.menu-category-title {
+  color: var(--highlight-color-light);
+  border-bottom: 3px solid #f62681;
+  margin-bottom: 1rem;
+  padding-bottom: 0.25rem;
 }
 
 .menu-item-name {
   font-family: var(--secondary-font);
   font-weight: 600;
   color: var(--text-color);
+  padding-top: 20px;
 }
 
 .menu-item-description {
@@ -282,8 +293,9 @@ nav .nav-link.active,
 
 details summary {
   cursor: pointer;
-  color: var(--highlight-color);
+  color: yellowgreen;
   font-weight: 500;
+  padding-bottom: 20px;
 }
 
 details[open] summary::after {
@@ -294,16 +306,34 @@ details summary::after {
   content: " ▼";
 }
 
-
-.carousel-control-prev:hover .carousel-control-prev-icon,
-.carousel-control-next:hover .carousel-control-next-icon {
-  filter: invert(100%) sepia(0%) saturate(1000%) hue-rotate(0deg)
-    brightness(150%) contrast(120%);
-  transform: scale(1.15);
-  transition: all 0.3s ease;
+/* Style checkboxes and radio buttons */
+input[type="checkbox"],
+input[type="radio"] {
+  color: black;
+  accent-color: var(--highlight-color-light);
+  background-color: var(--highlight-color);
+  width: 1.2em;
+  height: 1.2em;
+  cursor: pointer;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
+/* Add a subtle hover effect */
+input[type="checkbox"]:hover,
+input[type="radio"]:hover {
+  transform: scale(1.1);
+  box-shadow: 0 0 4px var(--highlight-color-light);
+}
+
+/* Adjust spacing between input and label text */
+label {
+  margin-left: 0.4em;
+  cursor: pointer;
+}
+
+
 /* Footer disclaimer */
+
 .footer-disclaimer {
   font-size: 0.85rem;
   line-height: 1.4;
@@ -358,7 +388,7 @@ details summary::after {
   .navbar-nav .custom-button-filled,
   .navbar-nav .custom-button-outline {
     font-size: 0.5rem;
-    padding: 8px 32px;
+    padding: 16px 32px;
     display: block; /* Full width look */
     text-align: center; /* Center button text */
     margin: 32px 0; /* Spacing between button and links */
