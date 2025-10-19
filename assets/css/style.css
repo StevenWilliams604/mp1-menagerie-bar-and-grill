@@ -249,7 +249,7 @@ nav .nav-link.active,
   transform: scale(1.2);
 }
 
-/* Previous / next control buttons */
+/* Carousel previous / next control buttons */
 .carousel-control-prev-icon,
 .carousel-control-next-icon {
   filter: invert(78%) sepia(96%) saturate(3600%) hue-rotate(280deg)
@@ -257,6 +257,43 @@ nav .nav-link.active,
   width: 2rem;
   height: 2rem;
 }
+
+/* Menu Section Styling */
+.menu-category-title {
+  color: var(--highlight-color);
+  border-bottom: 3px solid var(--highlight-color-light);
+  margin-bottom: 1rem;
+  padding-bottom: 0.25rem;
+}
+
+.menu-item {
+  margin-bottom: 1.5rem;
+}
+
+.menu-item-name {
+  font-family: var(--secondary-font);
+  font-weight: 600;
+  color: var(--text-color);
+}
+
+.menu-item-description {
+  margin-bottom: 0.5rem;
+}
+
+details summary {
+  cursor: pointer;
+  color: var(--highlight-color);
+  font-weight: 500;
+}
+
+details[open] summary::after {
+  content: " ▲";
+}
+
+details summary::after {
+  content: " ▼";
+}
+
 
 .carousel-control-prev:hover .carousel-control-prev-icon,
 .carousel-control-next:hover .carousel-control-next-icon {
