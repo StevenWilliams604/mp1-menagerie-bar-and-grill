@@ -144,7 +144,7 @@ nav .nav-link.active,
 
 /* Fix for hero section being hidden under fixed navbar */
 #hero {
-  padding-top: 70px; /* or margin-top: 70px; */
+  padding-top: 70px;
 }
 
 /* Hero Section of index.html */
@@ -156,7 +156,7 @@ nav .nav-link.active,
 
 .hero-heading {
   font-family: var(--secondary-font);
-  color: var(--highlight-color-light);
+  color: var(--accent-cyan);
   font-size: 2rem;
 }
 
@@ -186,8 +186,12 @@ nav .nav-link.active,
 /* Headings */
 .info-heading {
   font-family: var(--secondary-font);
-  color: var(--text-color);
+  color: var(--highlight-color-light);
   font-weight: 700;
+}
+
+.info-heading:hover {
+  color: var(--highlight-color);
 }
 
 /* Shocking pink bar below heading */
@@ -201,7 +205,6 @@ nav .nav-link.active,
 
 
 /* Carousel Styling */
-
 #gallery {
   background-color: var(--primary-bg-color);
   padding: 3rem 0;
