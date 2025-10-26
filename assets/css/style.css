@@ -19,6 +19,8 @@
   --secondary-bg-color: black;
   --highlight-color: indigo;
   --highlight-color-light: fuchsia;
+  --accent-cyan: #00ffff;
+  --accent-shocking-pink: #f62681;
 }
 
 /* Global styles */
@@ -192,9 +194,9 @@ nav .nav-link.active,
 .info-bar {
   width: 60%;
   height: 5px;
-  background-color: #f62681;
+  background-color: var(--accent-shocking-pink);
   border-radius: 3px;
-  border-color: #f62681;
+  border-color: var(--accent-shocking-pink);
 }
 
 
@@ -289,7 +291,7 @@ nav .nav-link.active,
 
 .menu-item-price {
   font-style: italic;
-  color: #00ffff;
+  color: var(--accent-cyan);
   font-size: 1rem;
   margin-bottom: 0.25rem;
   display: block;
@@ -337,6 +339,44 @@ input[type="radio"]:hover {
 label {
   margin-left: 0.4em;
   cursor: pointer;
+}
+
+/* Events Cards styling */
+.card {
+  background-color: #000;
+  color: var(--text-color);
+  border: 4px solid var(--highlight-color-light);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Add a nice interactive hover effect */
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 0 15px var(--highlight-color-light);
+}
+
+/* Ensure images fit nicely and maintain aspect ratio */
+.card-img-top {
+  object-fit: cover;
+  height: 250px; /* Adjust as needed for your layout */
+}
+
+/* Card title and text spacing */
+.card-title {
+  color: var(--highlight-color-light); /* Makes headings pop slightly */
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+
+.card-text {
+  color: var(--text-color);
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+/* Optional: make the border-highlight class a reusable accent style */
+.border-highlight {
+  border-color: var(--highlight-color-light) !important;
 }
 
 
