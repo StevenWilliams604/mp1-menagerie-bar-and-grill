@@ -379,6 +379,31 @@ label {
   border-color: var(--highlight-color-light) !important;
 }
 
+/* Dark theme for form fields */
+.form-control {
+  background-color: #000000 !important;
+  color: var(--text-color);
+  border: 1px solid var(--highlight-color-light);
+}
+
+/* Change placeholder text color for better readability */
+.form-control::placeholder {
+  color: rgba(255, 255, 255, 0.6);
+}
+
+/* Make sure labels contrast nicely */
+.form-label {
+  color: var(--text-color);
+}
+
+/* Subtle highlight when a field is focused */
+.form-control:focus {
+  background-color: #000000;
+  color: var(--text-color);
+  border-color: var(--highlight-color);
+  box-shadow: 0 0 0 0.2rem rgba(246, 38, 129, 0.25); /* faint magenta glow */
+}
+
 
 /* Footer disclaimer */
 
