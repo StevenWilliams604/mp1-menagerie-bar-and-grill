@@ -287,6 +287,14 @@ nav .nav-link.active,
   padding-top: 20px;
 }
 
+.menu-item-price {
+  font-style: italic;
+  color: #00ffff;
+  font-size: 1rem;
+  margin-bottom: 0.25rem;
+  display: block;
+}
+
 .menu-item-description {
   margin-bottom: 0.5rem;
 }
