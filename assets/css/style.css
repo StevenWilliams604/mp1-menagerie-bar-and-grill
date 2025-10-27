@@ -186,12 +186,12 @@ nav .nav-link.active,
 /* Headings */
 .info-heading {
   font-family: var(--secondary-font);
-  color: var(--highlight-color-light);
+  color: var(--accent-cyan);
   font-weight: 700;
 }
 
 .info-heading:hover {
-  color: var(--highlight-color);
+  color: var(--highlight-color-light);
 }
 
 /* Shocking pink bar below heading */

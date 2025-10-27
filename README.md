@@ -73,6 +73,14 @@ This website was designed to give guests a taste of what we offer, from browsing
 
 ---
 
+### Sources and acknowledgments
+
+* Snappy Service font downloaded from https://www.1001fonts.com/snappyservice-font.html
+* Screenshots from the Elite Dangerous video game by Frontier Developments
+* Additional stock imagery from pexels.com and pixabay.com
+
+---
+
 ## Looking Ahead
 
 We’re always aiming to improve. Future versions of the site may include:
