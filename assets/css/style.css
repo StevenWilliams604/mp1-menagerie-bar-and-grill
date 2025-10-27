@@ -322,6 +322,7 @@ nav .nav-link.active,
   margin-right: 10%;
 }
 
+/* Fix to make article paragraphs not stretch full width */
 article > p {
   margin-left: 10%;
   margin-right: 10%;
@@ -367,6 +368,34 @@ label {
   margin-left: 0.4em;
   cursor: pointer;
 }
+
+/* General discount badge style */
+.discount {
+  display: inline-block;
+  font-weight: 600;
+  color: #fff;
+  padding: 0.25rem 0.5rem;
+  border-radius: 0.375rem; /* same as Bootstrap's .rounded */
+  font-size: 0.875rem;
+  margin-right: 0.25rem;
+  margin-bottom: 0.25rem;
+  white-space: nowrap;
+}
+
+/* Specific discount categories */
+.discount-yuri {
+  background-color: #cc5500; /* dark orange – readable, strong contrast */
+}
+
+.discount-squadron {
+  background-color: #2e8b57; /* sea green – fits Alliance theme */
+}
+
+/* for Frequent Diners */
+.discount-frequent {
+  background-color: var(--accent-shocking-pink); 
+}
+
 
 /* Events Cards styling */
 .card {
@@ -519,3 +548,12 @@ label {
   }
 }
 
+/* Responsive adjustments for discount badges */
+@media (max-width: 576px) {
+  .discount {
+    display: block;
+    font-size: 0.8rem;
+    margin-left: 10%;
+    margin-right: 10%;
+  }
+}
