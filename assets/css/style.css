@@ -40,6 +40,7 @@ h3 {
 /* Footer styles */
 footer {
   background-color: var(--secondary-bg-color);
+  border-top: var(--highlight-color-light) 4px solid;
 }
 
 /* Footer social icons */
@@ -117,6 +118,7 @@ footer {
 /* Bootstrap overriding styles */
 nav,
 .navbar {
+  border-bottom: var(--highlight-color-light) 4px solid;
   background-color: var(--secondary-bg-color);
   font-family: var(--secondary-font);
 }
