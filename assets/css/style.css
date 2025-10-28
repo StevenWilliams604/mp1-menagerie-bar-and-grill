@@ -463,6 +463,16 @@ label {
 }
 
 
+/* 404 image responsiveness */
+.error-illustration {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
 /* Footer disclaimer */
 
 .footer-disclaimer {
@@ -557,5 +567,12 @@ label {
     font-size: 0.8rem;
     margin-left: 10%;
     margin-right: 10%;
+  }
+}
+
+/* Media Query to make 404 image less intrusive on larger viewports */
+@media (min-width: 992px) {
+  .error-illustration {
+    max-width: 800px;
   }
 }
