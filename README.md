@@ -188,6 +188,30 @@ As a Regular Customer, I want to sign up for newsletters and updates, so I can s
 
 ---
 
+## Testing and Bugs
+
+In order to assess the functionality, usability and responsivesness of the site, I performed the following procedures:
+
+- Toggled Device Mode (Ctrl Shift M) in my Firefox browser to test the responsiveness of the site at a wide variety of viewport widths. These ranged from 360px to 768px.
+- Tested the responsiveness under real-life conditions by accessing the website using a web browser on my Samsung S24 Ultra.
+- Entered both complete and incomplete details into the booking forms to ensure that they validate inputs as intended.
+
+
+### Resolved bugs
+
+- *Issue:* Menu button on mobile and tablet viewports did not collapse the menu once expanded.
+    - *Resolution:* Removed extraneous Bootstrap script that was causing a conflict and preventing the menu button from functioning as it should.
+
+- *Issue:* More than three flavours for ice cream and sorbet scoops could be selected via checkboxes, in contravention of the page text stating a maximum of three scoops.
+    - *Resolution:* Created JavaScript section to limit the amount of selections made by the user.
+
+
+### Unresolved bugs
+
+- *Issue:* When clicking the Newsletter button on the bottom of the main page, a custom 404 page is intended to be loaded, which includes an illustrative image. The image does not load, despite being present in the assets folder and the path being correct as far as I can tell.
+
+---
+
 ## Visit the Site
 
 [Live Website](https://stevenwilliams604.github.io/mp1-menagerie-bar-and-grill/)
